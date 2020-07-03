@@ -1,0 +1,22 @@
+@media(min-width: 992px){
+    .search__input{
+        min-width: 580px;
+    }
+
+    .search__title{
+        font-size: 80px;
+    }
+
+    .advancedBox{
+        min-width: 500px;
+    }
+}
+
+.search__title{
+    font-family: 'Pacifico', cursive;
+}
+
+.input-clean{
+    border-color: #ced4da !important;
+    box-shadow: 0 0 0 0 !important;
+}
