@@ -1,19 +1,11 @@
 @media(min-width: 992px){
-    .search__input{
+    .input-clean{
         min-width: 580px;
-    }
-
-    .search__title{
-        font-size: 80px;
     }
 
     .advancedBox{
         min-width: 500px;
     }
-}
-
-.search__title{
-    font-family: 'Pacifico', cursive;
 }
 
 .input-clean{
