@@ -13,25 +13,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Search</title>
   </head>
   <body>
+    <!--STARTS NAVBAR-->
     <nav class="navbar fixed-top navbar-expand-md navbar-light">
+
+        <!--Brand makes the collapse button be aligned to the right-->
         <a href="#" class="nav-brand"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
+        <!--STARTS COLLAPSE SECTION-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Google Search</a>
+                    <a href="../index.html" class="nav-link">Google Search</a>
                 </li>
                 <li class="nav-item">
-                    <a href="image.html" class="nav-link">Images</a>
+                    <a href="advanced.html" class="nav-link">Advanced Search</a>
                 </li>
                 <li class="nav-item d-none d-lg-block">
                     <a href="#" class="nav-link"><h4><i class="fas fa-th"></i></h4></a>
@@ -42,34 +47,30 @@
             </ul>
 
         </div>
+        <!--ENDS NAVBAR-->
     </nav>
+    <!--ENDS NAVBAR-->
 
     <section class="main">
         <div class="container">
+
+            <!--STARTS CENTER BLOCK-->
             <div class="row vh-100 justify-content-center align-content-center">
-                <div class="advancedBox shadow p-3 rounded text-center bg-light">
-                    <img src="img/google_logo.png" class="img-fluid" alt="">
-                    <form action="https://www.google.com/search" class="text-left">
-                        <div class="form-group">
-                            <label for="AllWords">All these words:</label>
-                            <input name="as_q" type="text" class="form-control input-clean" id="AllWords">
+                <div class="centerBox text-center">
+                    <img src="../img/image_logo.png" class="centerBox__img img-fluid">
+                    <form action="https://google.com/search" class="centerBox__form search">
+                        <div class="form-group mt-2">
+                            <label for="search" class="d-none"></label>
+                            <input type="text" class="centerBox__input shadow-sm input-clean rounded-pill form-control form-control-lg" id="search" aria-describedby="search" name="q">
+                          </div>
+                        <div class="form-group text-center">
+                            <button id="GoogleSearch" name='tbm' value='isch' class="d-none centerBox__button btn btn-primary mr-1" type="submit">Google Search</button>                       
                         </div>
-                        <div class="form-group">
-                            <label for="ExactWord">This exact wording or phrase:</label>
-                            <input name="as_epq" type="text" class="form-control input-clean" id="ExactWord">
-                        </div>
-                        <div class="form-group">
-                            <label for="AnyWords">Any of these words:</label>
-                            <input name="as_oq" type="text" class="form-control input-clean" id="AnyWords">
-                        </div>
-                        <div class="form-group">
-                            <label for="NoneWords">None of these words:</label>
-                            <input name="as_eq" type="text" class="form-control input-clean" id="NoneWords">
-                        </div>
-                        <button class="btn btn-primary btn-block" type='submit'>Advanced Search</butto>
                     </form>
-                </div>  
+                </div>
             </div>
+            <!--ENDS CENTER BLOCK-->
+
         </div>
     </section>
 
@@ -80,4 +81,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
-

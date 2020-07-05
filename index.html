@@ -13,25 +13,30 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Search</title>
   </head>
   <body>
+    <!--STARTS NAVBAR-->
     <nav class="navbar fixed-top navbar-expand-md navbar-light">
+
+        <!--Brand makes the collapse button be aligned to the right-->
         <a href="#" class="nav-brand"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
+        <!--STARTS COLLAPSE SECTION-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="advanced.html" class="nav-link">Advanced Search</a>
+                    <a href="pages/advanced.html" class="nav-link">Advanced Search</a>
                 </li>
                 <li class="nav-item">
-                    <a href="image.html" class="nav-link">Images</a>
+                    <a href="pages/image.html" class="nav-link">Images</a>
                 </li>
                 <li class="nav-item d-none d-lg-block">
                     <a href="#" class="nav-link"><h4><i class="fas fa-th"></i></h4></a>
@@ -42,26 +47,31 @@
             </ul>
 
         </div>
+        <!--ENDS NAVBAR-->
     </nav>
+    <!--ENDS NAVBAR-->
 
     <section class="main">
         <div class="container">
+
+            <!--STARTS CENTER BLOCK-->
             <div class="row vh-100 justify-content-center align-content-center">
-                <div class="text-center">
-                    <h1 class="h1 search__title d-none">Google Search</h1>
-                    <img src="img/google_logo.png" alt="Google Logo" class="img-fluid">
-                    <form action="https://google.com/search" class="search">
+                <div class="centerBox text-center">
+                    <img src="img/google_logo.png" class="centerBox__img img-fluid">
+                    <form action="https://google.com/search" class="centerBox__form search">
                         <div class="form-group mt-2">
                             <label for="search" class="d-none"></label>
-                            <input type="text" class="shadow-sm input-clean rounded-pill form-control form-control-lg" id="search" aria-describedby="search" name="q">
+                            <input type="text" class="centerBox__input shadow-sm input-clean rounded-pill form-control form-control-lg" id="search" aria-describedby="search" name="q">
                           </div>
                         <div class="form-group text-center">
-                            <button class="btn btn-primary mr-1" type="submit">Google Search</button>
-                            <button class="btn btn-primary ml-1" value="Estou com sorte" name="btnI" type="submit">I'm Feeling Lucky</button>
+                            <button id="GoogleSearch" class="centerBox__button btn btn-primary mr-1" type="submit">Google Search</button>
+                            <button id="FeelingLucky" class="centerBox__button btn btn-primary ml-1" value="Estou com sorte" name="btnI" type="submit">I'm Feeling Lucky</button>
                         </div>
                     </form>
                 </div>
             </div>
+            <!--ENDS CENTER BLOCK-->
+
         </div>
     </section>
 
